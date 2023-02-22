@@ -14,7 +14,7 @@ const LandingPage: FC<LandingPageProps> = ({ name }): ReactElement => (
       Welcome, {name} !
     </HeaderLabel>
     <SubHeaderLabel variant='h6'>
-      Please browser through the User section
+      Please browse through the application
     </SubHeaderLabel>
   </>
 )
