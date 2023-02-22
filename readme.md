@@ -9,3 +9,6 @@
 - `yarn install`
 - `yarn dev`
 - Server can be accessed http://localhost:4000
+
+# Docker
+ - `docker compose up` from root folder.
