@@ -4,13 +4,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/server",
-    "start": "node dist/server",
+    "start": "node -r esm dist/server",
     "build": "tsc -p ."
   },
   "dependencies": {
     "@apollo/server": "^4.4.0",
     "casual": "^1.6.2",
     "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
     "graphql": "^16.6.0"
   },
   "devDependencies": {

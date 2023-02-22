@@ -17,8 +17,8 @@ services:
       context: ./client
       dockerfile: ./Dockerfile
     restart: always
-    environment:
-      - GRAPHQL_SERVER=http://localhost:4000/graphql
+    #environment:
+    #  - NEXT_PUBLIC_GRAPHQL_SERVER=http://localhost:4000/graphql
     ports:
       - 3000:3000
     networks:
