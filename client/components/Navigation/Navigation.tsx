@@ -15,6 +15,7 @@ const renderDesktopNav = ({ handleCloseNavMenu }) => (
       {pages.map((page) => (
         <DesktopLink href={page} key={page}>
           <DesktopMenuLink
+            data-testid='sub-menu'
             onClick={handleCloseNavMenu}
           >
             {page}
@@ -57,7 +58,12 @@ const renderMobileNav = ({
         {pages.map((page) => (
           <MobileLink href={page} key={page}>
             <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">{page}</Typography>
+              <Typography
+                textAlign='center'
+                data-testid='sub-menu'
+              >
+                {page}
+              </Typography>
             </MenuItem>
           </MobileLink>
         ))}

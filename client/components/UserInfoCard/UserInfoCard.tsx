@@ -14,7 +14,7 @@ export type UserInfoCardProps = {
 const UserInfoCard: FC<UserInfoCardProps> = ({ user }): ReactElement => (
   <CardContainer variant='outlined'>
     <CardContent>
-      <Typography variant='h6'>
+      <Typography variant='h6' data-testid='sub-heading'>
         {user.name}
       </Typography>
       <EmailLabel href={`mailto:${user.email}`}>

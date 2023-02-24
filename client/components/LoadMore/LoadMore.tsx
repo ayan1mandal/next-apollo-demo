@@ -4,12 +4,12 @@ import { CardContainer } from './Styles';
 
 export interface LoadMoreProps {
   performFetchMore: () => {},
-  loading: boolean,
+  loading?: boolean,
 }
 
 const LoadMore: FC<LoadMoreProps> = ({ performFetchMore, loading = false }): ReactElement => (
   <CardContainer>
-    <Button variant='contained' onClick={performFetchMore} disabled={loading}>LOAD MORE</Button>
+    <Button data-testid='load-more' variant='contained' onClick={performFetchMore} disabled={loading}>LOAD MORE</Button>
   </CardContainer>
 );
 

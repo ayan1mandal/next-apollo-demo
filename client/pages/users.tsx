@@ -61,13 +61,13 @@ const UserPage: FC<UserPageProps> = ({ users }): ReactElement => {
             <UserInfoCard user={user} />
           </Grid>
         )}
-        {data && data.users.map((user) =>
+        {!loading && data && data.users.map((user) =>
           <Grid item xs={12} md={6} lg={3} key={user.email}>
             <UserInfoCard user={user} />
           </Grid>
         )}
       </Grid>
-      <LoadMore performFetchMore={performFetchMore} loading={loading}/>
+      <LoadMore performFetchMore={performFetchMore} loading={loading} />
     </>
   )
 }

@@ -1,14 +1,17 @@
 # Client
-- `cd client`
-- `yarn install`
-- `yarn dev`
-- Client can be accessed http://localhost:3000
+- Navigate to client folder - `cd client`
+- Install dependencies -`yarn install`
+- Start dev server - `yarn dev`
+- Client can be accessed from - `http://localhost:3000`
+- Test cases - `yarn test`
 
 # Server
-- `cd server`
-- `yarn install`
-- `yarn dev`
-- Server can be accessed http://localhost:4000
+-  Navigate to server folder - `cd server`
+- Install dependencies -`yarn install`
+- Start dev server - `yarn dev`
+- Server can be accessed from - `http://localhost:4000`
 
 # Docker
- - `docker compose up` from root folder.
+ - From root folder -`docker compose up`
+ - Client can be accessed from - `http://localhost:3000`
+ - Server can be accessed from - `http://localhost:4000`
